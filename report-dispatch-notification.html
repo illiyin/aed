@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <title>AED Emergency | Dashboard</title>
+
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="images/aediconlogo.ico">
+    <link rel="icon" sizes="27x65" href="images/aediconlogo.ico">
+    <link rel="apple-touch-icon" sizes="27x65" href="images/aediconlogo.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap.3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="plugins/datatable.1.10.16/datatables.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+  </head>
+  <body>
+
+    <div class="dashboard-container">
+
+      <div class="top-nav">
+        <div class="row dashboard-row">
+          <div class="col-sm-12 col-md-3 top-nav-item">
+            <div class="top-menu-left">
+              <img src="images/aed-logo.png" width="174" height="45" alt="AED Emergency Logo" class="img-responsive">
+              <button type="button" class="navbar-toggle toggle-top-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-7 col-md-6 top-nav-item">
+            <div class="media media-thumbnail media-top">
+              <div class="media-left media-middle top-picture">
+                <a href="#">
+                  <img class="media-object" src="images/photo/company-1.png" width="60" height="60" alt="Photo">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading top-label">Company Name</h4>
+                <p class="top-data">Douglas Country School District</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-3 top-nav-item">
+            <div class="media media-thumbnail media-top">
+              <div class="media-left media-middle top-picture">
+                <a href="#">
+                  <img class="media-object" src="images/photo/user-1.png" width="60" height="60" alt="Photo">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading top-label">Logged in as</h4>
+                <p class="top-data">Jeffco Brandon</p>
+                <a href="#" class="btn btn-success btn-xs">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidemenu-overlay hide animated"></div>
+      <div class="dashboard-left animated">
+
+        <div class="sidebar-menu" id="MainMenu">
+          <ul class="list-group">
+            <li class="list-group-item"><a href="index.html"><span class="aed-icon icon-speed"></span> Dashboard</a></li>
+            <li class="list-group-item"><a href="overview.html"><span class="aed-icon icon-globe"></span> Site Overview</a></li>
+            <li class="list-group-item parent-submenu active" data-toggle="collapse" data-parent="#MainMenu" data-target="#reports" aria-expanded="false">
+              <a href="#reports"><span class="aed-icon icon-document-active"></span> Reports <i class="aed-icon icon-arrow-down"></i></a>
+            </li>
+            <div class="collapse in" id="reports">
+              <li class="list-group-item submenu"><a href="report-aed-detail.html">AED Details</a></li>
+              <li class="list-group-item submenu"><a href="report-battery-and-pads.html">Battery &amp; Pads Expiration Dates</a></li>
+              <li class="list-group-item submenu"><a href="report-cpr-aed-trained-personnel.html">CPR/AED Trained Personnel</a></li>
+              <li class="list-group-item submenu active"><a href="report-dispatch-notification.html">Dispatch Notifications</a></li>
+            </div>
+            <li class="list-group-item"><a href="#"><span class="aed-icon icon-setting"></span> Settings</a></li>
+            <li class="list-group-item"><a href="brochure.html"><span class="aed-icon icon-brochure"></span> Sales Brochure</a></li>
+            <li class="list-group-item"><a href="contact.html"><span class="aed-icon icon-contact"></span> Contact Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="dashboard-right bg-white dashboard-content">
+        <div class="right-container">
+
+          <div class="right-wrapper">
+            <div class="row dashboard-row content-title">
+              <div class="col-xs-12">
+                <h1 class="page-heading">Report</h1>
+                <p class="page-caption">Dispatch Notifications</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-wrapper">
+            <div class="row dashboard-row table-row">
+
+
+              <div class="col-xs-12">
+                <div class="table-container">
+
+                  <select class="form-control filter-control" name="" id="filter_location" data-column="1">
+                    <option value="all" data-filter="0">Filter</option>
+                    <option value="main" data-filter="main">Main Entrance</option>
+                    <option value="mid" data-filter="mid">Mid Entrance</option>
+                    <option value="side" data-filter="side">Side Entrance</option>
+
+                  </select>
+
+                  <table id="dbtable" class="display table dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>Site</th>
+                            <th>AED Type - Location</th>
+                            <th>Dispatch Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Acres Green Elementary</td>
+                            <td data-search="main">HeartStart Onsite - Main Entrance</td>
+                            <td>Metcom Neal Hoppe (720) 402-7263 n.hoppe@netcom.org</td>
+                        </tr>
+                        <tr>
+                            <td>Acres Green Elementary</td>
+                            <td data-search="mid">HeartStart Onsite - Mid Entrance</td>
+                            <td>Metcom Neal Hoppe (720) 402-7263 n.hoppe@netcom.org</td>
+                        </tr>
+                        <tr>
+                            <td>Acres Green Elementary</td>
+                            <td data-search="side">HeartStart Onsite - Side Entrance</td>
+                            <td>Metcom Neal Hoppe (720) 402-7263 n.hoppe@netcom.org</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="plugins/jquery.3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap.3.3.7/js/bootstrap.js"></script>
+
+    <!-- Side Menu -->
+    <script type="text/javascript">
+
+      var overlay = $('.sidemenu-overlay');
+      var sidemenu = $('.dashboard-left');
+      var toggle = $('.toggle-top-menu');
+
+      overlay.on("click", function(){
+        sidemenu.addClass('slideOutLeft');
+        sidemenu.removeClass('slideInLeft');
+        $(this).addClass('fadeOut');
+        $(this).addClass('hide');
+      });
+
+      toggle.on("click", function(){
+        sidemenu.css('display', 'block');
+        sidemenu.addClass('slideInLeft');
+        sidemenu.removeClass('slideOutLeft');
+        overlay.removeClass('hide');
+        overlay.removeClass('fadeOut');
+      });
+
+    </script>
+
+    <!-- Datatables -->
+    <script type="text/javascript" src="plugins/datatable.1.10.16/datatables.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        /* Main Setting */
+        $('#dbtable').DataTable({
+          "bInfo": false,
+          "lengthChange": true,
+          "ordering": false,
+          lengthMenu: [
+              [ 5, 10, 25, 50],
+              [ 'Showing 5', 'Showing 10', 'Showing 25', 'Showing 50' ]
+          ],
+          "dom": "<'row table-action'<'col-md-6 table-filter'l><'col-md-6 table-pagination'p>><'row'<'col-xs-12'<'table-responsive table-content'<t>>>>",
+          "oLanguage": {
+            "oPaginate": {
+              "sPrevious": "<span class='aed-icon icon-arrow-left'></span>",
+              "sNext": "<span class='aed-icon icon-arrow-right'></span>"
+            }
+          }
+        });
+
+        function filterColumn (i,keyword) {
+          var tabel = $('#dbtable').DataTable();
+          if(keyword!="0"){
+            tabel.column(i).search(keyword, true, false ).draw();
+          }else if(keyword=="0"){
+            tabel.search('').columns().search('').draw();
+          }else{
+            tabel.draw();
+          }
+        }
+
+        $('select#filter_location').on('change',function(){
+          var keyword=$('#filter_location option:selected').attr('data-filter');
+          filterColumn($(this).attr('data-column'),keyword);
+
+        });
+
+        $('#filter_location option:selected').css('color', '#fff');
+
+      });
+    </script>
+
+  </body>
+</html>

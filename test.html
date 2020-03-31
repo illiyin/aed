@@ -1,0 +1,10 @@
+<script type="text/javascript">
+  const foo = {
+    bar : function() { return this.baz; },
+    baz : 1,
+  };
+
+  console.log((function(){ return typeof arguments[0](); })(foo.bar));
+
+  console.log("me");
+</script>

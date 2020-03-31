@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <title>AED Emergency | Dashboard</title>
+
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="images/aediconlogo.ico">
+    <link rel="icon" sizes="27x65" href="images/aediconlogo.ico">
+    <link rel="apple-touch-icon" sizes="27x65" href="images/aediconlogo.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap.3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+  </head>
+  <body>
+
+    <div class="dashboard-container">
+
+      <div class="top-nav">
+        <div class="row dashboard-row">
+          <div class="col-sm-12 col-md-3 top-nav-item">
+            <div class="top-menu-left">
+              <img src="images/aed-logo.png" width="174" height="45" alt="AED Emergency Logo" class="img-responsive">
+              <button type="button" class="navbar-toggle toggle-top-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-7 col-md-6 top-nav-item">
+            <div class="media media-thumbnail media-top">
+              <div class="media-left media-middle top-picture">
+                <a href="#">
+                  <img class="media-object" src="images/photo/company-1.png" width="60" height="60" alt="Photo">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading top-label">Company Name</h4>
+                <p class="top-data">Douglas Country School District</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-3 top-nav-item">
+            <div class="media media-thumbnail media-top">
+              <div class="media-left media-top top-picture">
+                <a href="#">
+                  <img class="media-object" src="images/photo/user-1.png" width="60" height="60" alt="Photo">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading top-label">Logged in as</h4>
+                <p class="top-data">Jeffco Brandon</p>
+                <a href="#" class="btn btn-logout btn-success btn-xs"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidemenu-overlay hide animated"></div>
+      <div class="dashboard-left animated">
+
+        <div class="sidebar-menu" id="MainMenu">
+          <ul class="list-group">
+            <li class="list-group-item"><a href="index.html"><span class="aed-icon icon-speed-active"></span> Dashboard</a></li>
+            <li class="list-group-item"><a href="overview.html"><span class="aed-icon icon-globe"></span> Site Overview</a></li>
+            <li class="list-group-item parent-submenu" data-toggle="collapse" data-parent="#MainMenu" data-target="#reports" aria-expanded="false">
+              <a href="#reports"><span class="aed-icon icon-document"></span> Reports <i class="aed-icon icon-arrow-down"></i></a>
+            </li>
+            <div class="collapse" id="reports">
+              <li class="list-group-item submenu"><a href="report-aed-detail.html">AED Details</a></li>
+              <li class="list-group-item submenu"><a href="report-battery-and-pads.html">Battery &amp; Pads Expiration Dates</a></li>
+              <li class="list-group-item submenu"><a href="report-cpr-aed-trained-personnel.html">CPR/AED Trained Personnel</a></li>
+              <li class="list-group-item submenu"><a href="report-dispatch-notification.html">Dispatch Notifications</a></li>
+            </div>
+            <li class="list-group-item"><a href="#"><span class="aed-icon icon-setting"></span> Settings</a></li>
+            <li class="list-group-item"><a href="brochure.html"><span class="aed-icon icon-brochure"></span> Sales Brochure</a></li>
+            <li class="list-group-item active"><a href="contact.html"><span class="aed-icon icon-contact-active"></span> Contact Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="dashboard-right dashboard-content">
+        <div class="right-container">
+
+          <div class="right-wrapper">
+            <div class="row dashboard-row content-title contact-content">
+              <div class="col-md-12">
+                <h1 class="page-heading">Contact Us</h1>
+              </div>
+              <div class="col-lg-6">
+                <div class="panel panel-default box-white">
+                  <label for="exampleInputEmail1" class="page-caption">AED Office</label>
+                  <div class="contact-office">
+                    <p class="page-caption"><span class="glyphicon glyphicon-map-marker"></span> 1001 Flagpole Court Brentwood, TN 37027</p>
+                    <p class="page-caption"><span class="glyphicon glyphicon-earphone"></span> (855) 233-0266</p>
+                    <p class="page-caption"><span class="glyphicon glyphicon-phone-alt"></span> (844) 318-0590</p>
+                    <p class="page-caption"><span class="glyphicon glyphicon-envelope"></span> hello@aed.com</p>
+                  </div>
+                </div>
+                <ul class="list-inline contact-socmed">
+                  <li><a href="https://www.facebook.com/AEDdotcom"><span class="aed-icon icon-facebook"></span></a></li>
+                  <li><a href="https://www.twitter.com/AEDdotcom"><span class="aed-icon icon-twitter"></span></a></li>
+                  <li><a href="https://www.linkedin.com/company/2543619"><span class="aed-icon icon-linkedin"></span></a></li>
+                  <li><a href="http://www.aed.com/blog/"><span class="aed-icon icon-blogger"></span></a></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6458.055419476781!2d-86.810381!3d35.970748!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88647beed14e56bd%3A0x2937e0969a503ef7!2s1001+Flagpole+Ct%2C+Brentwood%2C+TN+37027%2C+USA!5e0!3m2!1sen!2sid!4v1522929284980"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="plugins/jquery.3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap.3.3.7/js/bootstrap.js"></script>
+
+    <!-- Side Menu -->
+    <script type="text/javascript">
+
+      var overlay = $('.sidemenu-overlay');
+      var sidemenu = $('.dashboard-left');
+      var toggle = $('.toggle-top-menu');
+
+      overlay.on("click", function(){
+        sidemenu.addClass('slideOutLeft');
+        sidemenu.removeClass('slideInLeft');
+        $(this).addClass('fadeOut');
+        $(this).addClass('hide');
+      });
+
+      toggle.on("click", function(){
+        sidemenu.css('display', 'block');
+        sidemenu.addClass('slideInLeft');
+        sidemenu.removeClass('slideOutLeft');
+        overlay.removeClass('hide');
+        overlay.removeClass('fadeOut');
+      });
+
+    </script>
+
+  </body>
+</html>

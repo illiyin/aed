@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <title>AED Emergency | Dashboard</title>
+
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="images/aediconlogo.ico">
+    <link rel="icon" sizes="27x65" href="images/aediconlogo.ico">
+    <link rel="apple-touch-icon" sizes="27x65" href="images/aediconlogo.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap.3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+  </head>
+  <body>
+
+    <div class="dashboard-container">
+
+      <div class="top-nav">
+        <div class="row dashboard-row">
+          <div class="col-sm-12 col-md-3 top-nav-item">
+            <div class="top-menu-left">
+              <img src="images/aed-logo.png" width="174" height="45" alt="AED Emergency Logo" class="img-responsive">
+              <button type="button" class="navbar-toggle toggle-top-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-7 col-md-6 top-nav-item">
+            <div class="media media-thumbnail media-top">
+              <div class="media-left media-middle top-picture">
+                <a href="#">
+                  <img class="media-object" src="images/photo/company-1.png" width="60" height="60" alt="Photo">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading top-label">Company Name</h4>
+                <p class="top-data">Douglas Country School District</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-3 top-nav-item">
+            <div class="media media-thumbnail media-top">
+              <div class="media-left media-top top-picture">
+                <a href="#">
+                  <img class="media-object" src="images/photo/user-1.png" width="60" height="60" alt="Photo">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading top-label">Logged in as</h4>
+                <p class="top-data">Jeffco Brandon</p>
+                <a href="#" class="btn btn-logout btn-success btn-xs"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidemenu-overlay hide animated"></div>
+      <div class="dashboard-left animated">
+
+        <div class="sidebar-menu" id="MainMenu">
+          <ul class="list-group">
+            <li class="list-group-item active"><a href="index.html"><span class="aed-icon icon-speed-active"></span> Dashboard</a></li>
+            <li class="list-group-item"><a href="overview.html"><span class="aed-icon icon-globe"></span> Site Overview</a></li>
+            <li class="list-group-item parent-submenu" data-toggle="collapse" data-parent="#MainMenu" data-target="#reports" aria-expanded="false">
+              <a href="#reports"><span class="aed-icon icon-document"></span> Reports <i class="aed-icon icon-arrow-down"></i></a>
+            </li>
+            <div class="collapse" id="reports">
+              <li class="list-group-item submenu"><a href="report-aed-detail.html">AED Details</a></li>
+              <li class="list-group-item submenu"><a href="report-battery-and-pads.html">Battery &amp; Pads Expiration Dates</a></li>
+              <li class="list-group-item submenu"><a href="report-cpr-aed-trained-personnel.html">CPR/AED Trained Personnel</a></li>
+              <li class="list-group-item submenu"><a href="report-dispatch-notification.html">Dispatch Notifications</a></li>
+            </div>
+            <li class="list-group-item"><a href="#"><span class="aed-icon icon-setting"></span> Settings</a></li>
+            <li class="list-group-item"><a href="brochure.html"><span class="aed-icon icon-brochure"></span> Sales Brochure</a></li>
+            <li class="list-group-item"><a href="contact.html"><span class="aed-icon icon-contact"></span> Contact Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="dashboard-right dashboard-content">
+        <div class="right-container">
+
+          <div class="right-wrapper">
+            <div class="row dashboard-row content-title">
+              <div class="col-md-7">
+                <h1 class="page-heading">Dashboard</h1>
+                <p class="page-caption">Overview of your program and AED alerts</p>
+              </div>
+              <div class="col-md-5">
+                <div class="media media-thumbnail">
+                  <div class="media-left media-middle top-picture">
+                    <a href="#">
+                      <img class="media-object" src="images/photo/coordinator-1.png" width="60" height="60" alt="Photo">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading top-label">Program Coordinator</h4>
+                    <p class="top-data">Paulette Joswick</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-wrapper">
+            <div class="row dashboard-row content-summary">
+              <div class="col-sm-6 col-lg-3 summary-item">
+                <div class="panel panel-default box-white">
+                  <p class="summary-label">Total Sites</p>
+                  <p class="summary-value">26</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 summary-item">
+                <div class="panel panel-default box-white">
+                  <p class="summary-label">Total AEDs</p>
+                  <p class="summary-value">36</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 summary-item">
+                <div class="panel panel-default box-white">
+                  <p class="summary-label">Trained Personnel</p>
+                  <p class="summary-value">15</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 summary-item">
+                <div class="panel panel-default box-white">
+                  <p class="summary-label">AED Passed Inspection</p>
+                  <p class="summary-value">94%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-wrapper">
+            <div class="row dashboard-row">
+              <div class="col-xs-12">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs dashboard-tab" role="tablist">
+                  <li role="presentation" class="active"><a href="#aed" aria-controls="aed" role="tab" data-toggle="tab">AED Alerts</a></li>
+                  <li role="presentation"><a href="#cer" aria-controls="cer" role="tab" data-toggle="tab">Certification Alerts</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content dashboard-tab-content">
+                  <div role="tabpanel" class="tab-pane dashboard-pane active" id="aed">
+                    <div class="panel panel-default box-white">
+                      <div class="row dashboard-row alerts-content">
+                        <div class="col-md-12 col-lg-7">
+                          <h3 class="box-heading">DCS Montessori Charter School</h3>
+                          <p class="box-caption">Main School Highway</p>
+                          <p class="box-date">23/2/18</p>
+                        </div>
+                        <div class="col-md-12 col-lg-5">
+                          <p class="alerts-expired">
+                            <span class="aed-icon icon-calendar"></span>
+                            <span class="expired-label">Expiration :</span>
+                            Adult Electronic Pads
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane dashboard-pane" id="cer">
+                    <div class="panel panel-default box-white">
+                      <div class="row dashboard-row alerts-content">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="plugins/jquery.3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap.3.3.7/js/bootstrap.js"></script>
+
+    <!-- Side Menu -->
+    <script type="text/javascript">
+
+      var overlay = $('.sidemenu-overlay');
+      var sidemenu = $('.dashboard-left');
+      var toggle = $('.toggle-top-menu');
+
+      overlay.on("click", function(){
+        sidemenu.addClass('slideOutLeft');
+        sidemenu.removeClass('slideInLeft');
+        $(this).addClass('fadeOut');
+        $(this).addClass('hide');
+      });
+
+      toggle.on("click", function(){
+        sidemenu.css('display', 'block');
+        sidemenu.addClass('slideInLeft');
+        sidemenu.removeClass('slideOutLeft');
+        overlay.removeClass('hide');
+        overlay.removeClass('fadeOut');
+      });
+
+    </script>
+
+  </body>
+</html>
